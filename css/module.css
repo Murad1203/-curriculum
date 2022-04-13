@@ -1,0 +1,349 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+.back {
+    position: absolute;
+    top: 400px;
+    left: 0;
+}
+
+
+
+body {
+    background: linear-gradient(108.96deg, #9AB0FE 0%, #B182E0 100%);
+}
+
+/* h1 */
+.title {
+
+    margin-top: 35px;
+
+    font-family: 'Acme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/* ЭКЗАМЕН */
+.type {
+
+
+    margin-top: 30px;
+
+    width: 88px;
+    background: #E3D7FF;
+    border-radius: 19px;
+
+    font-family: 'Abel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 29px;
+
+    text-align: center;
+
+    color: #000000;
+
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+/* КАФЕДРА */
+.dev {
+
+    margin-top: 40px;
+
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    
+}
+
+.dev .dev_circ {
+    width: 18px;
+    height: 18px;
+    background: radial-gradient(50% 50% at 50% 50%, #E3D7FF 64.37%, rgba(161, 160, 244, 0) 100%);
+}
+
+.dev .dev_text {
+    font-family: 'Abel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+}
+
+
+
+/* ОБЬЕМ ДИСЦИПЛЛИН */
+.box_vol {
+    padding-top: 5px;
+    /* padding-bottom: 1px; */
+    /* width: 641px; */
+    width: 640px;
+    height: 180px;
+    background: #E3D7FF;
+    border-radius: 31px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box_vol .vol_title {
+    margin-top: 20px;
+    
+    font-family: 'Abel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #1D1D1D;
+}
+
+.box_vol .volume_hours {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 10px;
+
+}
+
+/* СОДЕРЖАНИЕ ОБЪЕМА ДИСЦИПЛИН */
+.vol__lecture {
+    margin-top: 25px;
+    display: flex;
+    /* justify-content: start; */
+    align-items: center;
+    gap: 5px;
+    
+}
+
+.vol__lecture .vol_circle {
+    
+    width: 13px;
+    height: 13px;
+    background: radial-gradient(50% 50% at 50% 50%, #A0A5F7 64.37%, rgba(161, 160, 244, 0) 100%);
+}
+
+
+.vol__lecture .vol_text {
+    font-family: 'Abel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 19px;
+
+    color: #1D1D1D;
+
+}
+
+/* ЗАДАЧИ */
+.box_task {
+
+    width: 290px;
+    height: 180px;
+
+    background: #FFFFFF;
+    border-radius: 29px;
+}
+
+.box_task .task_title {
+
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    font-family: 'Acme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 19px;
+    /* identical to box height */
+    text-align: center;
+
+
+    color: #A49CF2;
+}
+
+.box_task .task_1 {
+    /* margin-top: 10px;. */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    
+    margin: 10px 0 0 10px;
+    
+}
+
+.box_task .task_1 img {
+    width: 15px;
+    height: 15px;
+}
+
+.box_task .task_1 .task_text {
+
+    /* margin-top: 15px; */
+    font-family: 'Abel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 14px;
+
+    color: #000000;
+
+}
+
+.box_task .goal_text {
+    font-family: 'Abel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 15px;
+    text-align: center;
+
+    color: #000000;
+
+}
+
+
+
+
+/* ЗАДАЧИ И ЦЕЛИ */
+.object {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 65px;
+}
+
+/* КОМПЕТЕНЦИИ */
+.comp .comp_title {
+
+    margin-top: 25px;
+    
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.comp .comp_title h2 {
+    font-family: 'Acme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 15px;
+    
+    text-align: center;
+
+    color: #FFFFFF;
+    
+}
+.comp .comp_title .quest {
+    padding-top: 5px;
+}
+
+.comp .comp_opk {
+
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+.comp .comp_opk .opk_text {
+    margin-top: 10px;
+    font-family: 'Acme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 15px;
+
+    color: #FFFFFF;
+
+}
+
+/* ЛИТЕРАТУРА */
+.litre .litre_title {
+
+
+    margin-top: 25px;
+
+    font-family: 'Acme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 15px;
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+.litre .cont_text {
+
+    margin-top: 15px;
+    
+    font-family: 'Abel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 19px;
+    /* text-align: center; */
+
+    color: #FFFFFF;
+}
+
+.litre .litre_cont a {
+    text-decoration: none !important;
+    /* padding-top: 10px; */
+}
+
+.litre .litre_cont h2 {
+    margin-top: 10px;
+     font-weight: 200;
+}
+
+
+.litre .litre_cont {
+    
+    margin-top: 15px;
+    
+    font-family: 'Abel';
+    font-style: normal;
+    /* font-weight: 400; */
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+
+.footer {
+
+
+
+    margin-top: 50px;
+
+    background: #414141;
+    height: 10px;
+}
