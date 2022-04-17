@@ -1,17 +1,12 @@
-* {
-    box-sizing: border-box;
+html,
+body {
     margin: 0;
     padding: 0;
-}
-
-body {
-    background: linear-gradient(108.96deg, #9AB0FE 0%, #B182E0 100%);
-}
-
-h1, 
-h2,
-h3 {
-    font-weight: normal;
+    width: 2700px;
+    height: 100vh;
+    background: linear-gradient(#9AB0FE 50%, #B182E0 100%);
+    font-family: Gilroy, sans-serif;
+    font-size: 1.5vw;
 }
 
 a {
@@ -19,85 +14,44 @@ a {
     color: black;
 }
 
-ul {
-    list-style: none;
-    padding: 0 !important;
-}
-
-
-/* Общий */
-.container {
-    margin: 0 auto;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    max-width: 1920px;
-}
-
-/* <!-- МОДУЛИ --> */
-.header__links {
+.head-container {
     position: absolute;
-    top: 0;
-    left: 0;
-  
+    top: 0px;
+    left: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 10px 0 30px;
+    width: 97vw;
 }
+
+.header__links {
+    padding-left: 0;
+}
+
+.tbn-faq {
+    margin-bottom: 12%;
+    font-family: Gilroy;
+}
+
 .header__link {
     padding-left: 27px;
     position: relative;
-
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
+    /* font-weight: 400; */
+    font-size: 1.3vw;
     margin: 15px 0 0 5px;
-    
-    
 }
 
-/* <!-- ШАПКА ПРОФИЛЯ --> */
-
-.header {
-    padding: 10px 0;
-    text-align: center;
-}
-.header__title {
-   
-    margin-top: 14px;
-    background: linear-gradient(180deg, #FFFFFF 93.18%, rgba(255, 255, 255, 0) 164.29%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-emphasis-color: transparent;
-
-    font-family: "Gilroy";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 55px;
-    line-height: 37px;
-    text-transform: uppercase;
-
-}
-
-.header__text {
-    margin-top: 18px;
-    font-family: 'Gilroy';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 35px;
-    line-height: 17px;
-
-    color: #000000;
-
-}
-
-.header__links a {
-    margin-left: 10px;
-}
-.header__link:not(:last-child) {
-    margin-bottom: 10px;
-}
 .header__link::before {
-    margin-left: 5px;
+    margin-left: 0;
     content: '';
     position: absolute;
     top: 2px;
@@ -105,265 +59,119 @@ ul {
     height: 24px;
     width: 24px;
     border-radius: 50%
-} 
+}
+
 .header__link:nth-child(1)::before {
     background: #7468FF;
     transform: rotate(-89.61deg);
 }
+
 .header__link:nth-child(2)::before {
     background: #E6BFFF;
-transform: rotate(-89.61deg);
+    transform: rotate(-89.61deg);
 }
+
 .header__link:nth-child(3)::before {
-    
-background: #D99DFF;
-transform: rotate(-89.61deg);
+    background: #D99DFF;
+    transform: rotate(-89.61deg);
 }
+
 .header__link:nth-child(4)::before {
     background: #FFAF75;
-transform: rotate(-89.61deg);
+    transform: rotate(-89.61deg);
 }
+
 .header__link:nth-child(5)::before {
     background: #C15DFF;
-    
-transform: rotate(-89.61deg);
+    transform: rotate(-89.61deg);
 }
+
 .header__link:nth-child(6)::before {
     background: #9bffa3;
-    
-transform: rotate(-89.61deg);
+    transform: rotate(-89.61deg);
 }
 
-/* <!-- КНОПКИ ШАПКИ --> */
-.button__head {
-    display: flex;
-    justify-content: center;
-    gap: 70px;
-    align-items: center;
-    margin-bottom: 50px;
-    margin-top: 18px;
-
-    margin-bottom: 165px;
+.header-title {
+    background-color: #FFFFFF;
+    margin-top: 14px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-emphasis-color: transparent;
+    font-family: "Gilroy";
+    margin-bottom: 18px;
+    font-size: 4vw;
+    text-transform: uppercase;
 }
-.button__head-ps {
+
+.header-text {
+    font-family: 'Gilroy';
+    font-weight: 300;
+    font-size: 2.5vw;
+}
+
+.btn-header {
     padding: 7px 10px;
     background: rgba(255, 255, 255, 0.79);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
-    max-width: 240px;
-    font-family: 'Gilroy';
-    
-    font-weight: 300;
-    font-size: 28px;
-    text-align: center;
-
-    color: #000000;
-
-
+    width: 17vw;
+    font-family: Gilroy;
+    font-size: 2vw;
 }
 
-.button__head-fgos {
-    padding: 22px 10px;
-    background: rgba(255, 255, 255, 0.79);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
-    font-family: 'Gilroy';
-
-    font-weight: 300;
-    font-size: 28px;
-    text-align: center;
-
+.main {
+    padding-top: 40vh;
+    padding-bottom: 10px;
 }
 
-
-/* <!-- КУРСЫ --> */
-.first__course {
-    margin-top: 80px;
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-    gap: 50px;
-
-    
-
-    
-}
-.first__course-title {
-    padding: 20px 20px;
-
-
-
-    background: rgba(255, 255, 255, 0.79);
-    border-radius: 20px;
-    
-
-    font-family: 'Gilroy';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 10px;
-    color: #7B5BB3;
+.course-title {
+    font-family: Gilroy;
+    background-color: rgb(255, 255, 255, 0.30);
+    padding-left: 30px;
+    /* text-align: center; */
 }
 
-/* <!-- 1 И 2 СЕМЕСТРЫ ДЛЯ ВСЕХ КУРСОВ --> */
-.first__semestr,
-.second__semestr {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    padding: 30px 0;
-    width: 100%;
-}
-
-
-.first__semestr {
+.separator {
     border-bottom: 1px solid #000;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
-/* Гуманит модуль */
-.courses_button_purple {
-    max-width: 160px;
-    min-width: 100px;
-    cursor: pointer;
+.semestr a {
+    border-radius: 18px;
+    text-align: center;
+    font-size: 1.3vw;
+    line-height: 46px;
+    padding: 10px;
+    border: none;
+    text-transform: uppercase;
+}
+
+.semestr li {
+    display: inline-block;
+}
+
+.btn-purple-courses {
     background: #C15DFF;
-    border-radius: 18px;
-    
+}
 
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: 200;
-    font-size: 15px;
-    line-height: 16px;
-    text-align: center;
-    color: #000000;
-    text-transform: uppercase;
-    border: none;
-    
-    padding: 10px;
-
-} 
-
-
-/* Иностранный модуль */
-.courses_button_yellow {
-    max-width: 150px;
-    
-    min-width: 100px;
-    cursor: pointer;
-    
+.btn-yellow-courses {
     background: #FFAF75;
-    border-radius: 18px;
-    
-
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: 200;
-    font-size: 15px;
-    line-height: 16px;
-    text-align: center;
-    color: #000000;
-    text-transform: uppercase;
-    border: none;
-    
-    padding: 10px;
-
 }
 
-/* Математический */
-.courses_button_math {
-    max-width: 180px;
-    
-    min-width: 140px;
-    cursor: pointer;
-    
+.btn-math-courses {
     background: #D99DFF;
-    border-radius: 18px;
-    
-
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: 200;
-    font-size: 15px;
-    line-height: 16px;
-    text-align: center;
-    color: #000000;
-    text-transform: uppercase;
-    border: none;
-    
-    padding: 10px;
-
 }
-/* Базовый модуль */
-.courses_button_base {
-    max-width: 190px;
-    
-    min-width: 140px;
-    cursor: pointer;
-    
+
+.btn-base-courses {
     background: #E6BFFF;
-    border-radius: 18px;
-    
-
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: 200;
-    font-size: 15px;
-    line-height: 16px;
-    text-align: center;
-    color: #000000;
-    text-transform: uppercase;
-    border: none;
-    
-    padding: 10px;
-
 }
 
-
-/* Профильный модуль */
-.courses_button_profil {
-    max-width:210px;
-    
-    min-width: 130px;
-    cursor: pointer;
-    
+.btn-profil-courses {
     background: #7468FF;
-    border-radius: 18px;
-    
-
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: 200;
-    font-size: 15px;
-    line-height: 16px;
-    text-align: center;
-    color: #000000;
-    text-transform: uppercase;
-    border: none;
-    
-    padding: 10px;
-
 }
 
-/* Факультативы */
-.courses_button_facult {
-    max-width:180px;
-    
-    min-width: 100px;
-    cursor: pointer;
-    
+.btn-facult-courses {
     background: #9bffa3;
-    border-radius: 18px;
-    
-
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: 200;
-    font-size: 15px;
-    line-height: 16px;
-    text-align: center;
-    color: #000000;
-    text-transform: uppercase;
-    border: none;
-    
-    padding: 10px;
 }

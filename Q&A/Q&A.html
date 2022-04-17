@@ -1,0 +1,676 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Часто задаваемые вопросы</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="28dbf03c-1598-41cc-9559-c91789022769" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">❓</span></div><h1 class="page-title">Часто задаваемые вопросы</h1></header><div class="page-body"><ul id="9d71ac2c-078b-4ba8-abf4-5f8804a07038" class="toggle"><li><details open=""><summary><mark class="highlight-gray">Какие есть способы подачи документов?</mark></summary><p id="d91cfa80-1cf8-4064-8e7a-23f6868bf306" class="">Для поступления на обучение поступающие могут подают заявление о приеме с приложением необходимых документов:</p><ol type="1" id="cc5a6be1-ee6e-4e98-b52d-1142626b93f8" class="numbered-list" start="1"><li>лично в Университет по адресу<p id="30d846ce-29b0-426d-815d-91107486e203" class="">Адрес приемной комиссии:
+367000, Республика Дагестан, г. Махачкала, ул. Батырая, 2, Дворец спорта.
+Телефон для справок (8722) 562116, e-mail: <a href="mailto:umu@dgu.ru">umu@dgu.ru</a> , <a href="mailto:priem@dgu.ru">priem@dgu.ru</a></p></li></ol><ol type="1" id="e025e306-3cb6-49a8-a144-0e98f8424389" class="numbered-list" start="2"><li>в электронной форме<p id="49c851b7-55e2-4526-b190-91db1f7c2731" class="">с использованием суперсервиса &quot;Поступление в вуз онлайн&quot; посредством
+федеральной государственной информационной системы &quot;Единый портал
+государственных и муниципальных услуг (функций)&quot;;</p></li></ol><ol type="1" id="c2972d8c-3160-4002-87a3-d48dd286202e" class="numbered-list" start="3"><li>через операторов почтовой связи общего пользования по адресу:<p id="b99a8a78-3351-4c23-8b7a-f9bf3e1a726e" class="">для поступления в ДГУ (головной вуз)
+Почтовый адрес:
+367000, Республика Дагестан, г. Махачкала, ул. М.Гаджиева, 43а.</p></li></ol></details></li></ul><ul id="61231246-1cf6-4d98-b5dc-cf131f711c6e" class="toggle"><li><details open=""><summary><mark class="highlight-brown"><strong>Можно ли сдать вступительные экзамены в вузе?</strong></mark></summary><p id="f28d05a1-2600-4af7-955e-b78974de9240" class="">Да, для поступления на все направления ФИиИТ можно сдать вступительные экзамены по следующим предметам:</p><ol type="1" id="8e128c41-5747-449e-a2e8-5758baaafa40" class="numbered-list" start="1"><li>Русский язык</li></ol><ol type="1" id="46917d3c-e481-4c00-9c4d-4c202eeb9202" class="numbered-list" start="2"><li>Математика (профиль)</li></ol><ol type="1" id="cbd51f24-a2a8-44f1-a2b1-3e13302b48ee" class="numbered-list" start="3"><li>Информатика</li></ol></details></li></ul><ul id="c7138fad-f266-4bd5-8cb6-3c94e2e6615b" class="toggle"><li><details open=""><summary><mark class="highlight-orange"><strong>Какой средний балл поступивших абитуриентов?</strong></mark></summary><p id="96c0fd24-6eef-415a-a65f-261a77f2d6a1" class="">Средний балл по поступивших абитуриентов за прошлый год за 1 предмет <strong>≈54</strong></p></details></li></ul><ul id="25dc49d5-4360-48e5-b011-14005f4c323b" class="toggle"><li><details open=""><summary><mark class="highlight-yellow"><strong>Стоимость обучения на платной основе?</strong></mark></summary><ol type="1" id="f887ae96-f922-406a-8a2f-4f976ac45c79" class="numbered-list" start="1"><li>Стоимость обучения на платной основе составляет - 83820 руб. / год</li></ol></details></li></ul><ul id="a90a61d4-d37d-45f3-b1ae-2b8ce9db9e8a" class="toggle"><li><details open=""><summary><mark class="highlight-teal">Какой проходной балл при поступлении?</mark></summary><p id="97f9d35d-54cb-41db-802b-87e2e4e5a1b5" class="">1) Минимальными баллами для возможного поступления являются:</p><p id="23c591fa-3958-448e-9eca-99fdf8b43b74" class="">Математика (профильная) - 39</p><p id="6261e598-fa9f-4dd0-ab6a-91ff23acff70" class="">Информатика и ИКТ - 44</p><p id="fac23428-0228-463d-98f0-6391df1b861c" class="">Русский язык - 40</p><p id="8f57853e-5265-4bb4-975e-c32d2bf953ec" class="">2) Победителям и призерам олимпиады школьников, проводимых в порядке устанавливаемом федеральным органом исполнительной власти:</p><ul id="8b20ab74-bc01-4b48-9268-a7a962e09f3d" class="bulleted-list"><li style="list-style-type:disc">для приема без вступительных испытаний по одному общеобразовательному предмету, определенному университетом соответствующим профилю олимпиады;</li></ul><ul id="8cdadea8-9a17-4008-9d57-5c5ab18aa511" class="bulleted-list"><li style="list-style-type:disc">для использования преимущества посредством установления наивысшего результата (100 баллов) общеобразовательного вступительного испытания соответствующего профилю олимпиады</li></ul><p id="f6f6a28a-7517-45c0-af6c-e69d700102b1" class="">Математика (профильная) - 75</p><p id="04362b88-8bca-40de-89da-6ff297f7759f" class="">Информатика и ИКТ - 75</p><p id="8510213d-0a19-498a-bb83-fc81e632e58c" class="">Русский язык -75</p></details></li></ul><ul id="ea2d956e-3134-46c2-ae48-68cfbd6b32f8" class="toggle"><li><details open=""><summary><mark class="highlight-blue">Какие документы нужны для поступления в вуз?</mark></summary><ul id="a3e0cf90-e63b-41f6-9e85-b032f30bbb8a" class="bulleted-list"><li style="list-style-type:disc">Паспорт</li></ul><ul id="b1b6a90a-9825-454f-800b-2914046dd2ca" class="bulleted-list"><li style="list-style-type:disc">Документ об образовании</li></ul><ul id="cead6c86-55ca-4e1e-bcba-e1ae7852cc9b" class="bulleted-list"><li style="list-style-type:disc">СНИЛС</li></ul><ul id="14cc9a0b-c61c-434e-bdd2-a3902a862da8" class="bulleted-list"><li style="list-style-type:disc">Результаты ЕГЭ / вступительных экзаменов(испытаний)</li></ul><ul id="a07d3b1c-f750-4ca0-9797-3cd87f81ca27" class="bulleted-list"><li style="list-style-type:disc">Фотографии</li></ul><ul id="f8d1145c-4df3-49e4-ab0e-4ae3a3c10a7b" class="bulleted-list"><li style="list-style-type:disc">Индивидуальные достижения (в этом году учитываются не только золотые знаки отличия ГТО, но и серебряные и бронзовые)</li></ul><ul id="49ec4305-5c77-4bac-b5ec-61e34722cfb7" class="bulleted-list"><li style="list-style-type:disc">Медицинская справка</li></ul></details></li></ul><ul id="9cf988c9-39e0-48fd-8bb6-588e0fd79c82" class="toggle"><li><details open=""><summary><mark class="highlight-purple">Чем отличаются 3 данных направления поступления?</mark></summary><p id="d53007e7-ccf0-42bb-9217-f6c8b7da3322" class="">Прикладная информатика в экономике и управлении - специальность готовит специалисто с уклоном в экономику и управление и предполагает, что область профессиональный деятельности выпускника будет так или иначе связана с экономикой, управлением и менеджментом.</p><p id="2cc4634d-df41-4848-baa4-c1e9e15faa10" class="">Прикладная информатика в юриспруденции - специальность готовит специалисто с уклоном в экономику и управление и предполагает, что область профессиональный деятельности выпускника будет так или иначе связана с юриспруденцией и правом.</p><p id="bba66906-518e-45a3-a765-0bdf037d65fd" class="">Информационные системы и программирование - является продолжением направления, оканчиваемым студентами колледжа ДГУ, также больший уклон на программирование, чем на двух других направлениях.</p></details></li></ul><ul id="e1abb9b1-28ef-4d9d-9d15-0afc9d78a2f4" class="toggle"><li><details open=""><summary><mark class="highlight-pink">Можно ли поступить без ЕГЭ?</mark></summary><p id="05f39108-a073-4e6b-8cd1-7b0eef464783" class="">Да, также есть возможность поступить по вступительным испытаниям и олимпиадам.</p></details></li></ul><ul id="6398c694-1b2b-4da4-a9be-2a132caa460b" class="toggle"><li><details open=""><summary><mark class="highlight-red">За какие индивидуальные достижения можно получить доп. баллы? Сколько?</mark></summary><p id="81918a7e-38b1-49f7-a042-ed537f94a555" class="">Наличие статуса чемпиона и призера Олимпийских игр, Паралимпийских игр и Сурдлимпийских игр, чемпиона мира, чемпиона Европы, лица, занявшего первое место на первенстве мира, первенстве Европы по видам спорта, включенным в программы Олимпийских игр, Паралимпийских игр и Сурдлимпийских игр - 5 баллов.</p><p id="5f795e9a-3ef7-44f5-bf5a-8089c4a51093" class="">Наличие аттестата о среднем общем образовании с отличием, или аттестата о среднем (полном) общем образовании для награжденных золотой медалью, или аттестата о среднем (полном) общем образовании для награжденных серебряной медалью- 5 баллов.</p><p id="401bbd4f-4337-4fd5-bbde-29b829bef58f" class="">Наличие диплома о среднем профессиональном образовании с отличием - 5 баллов.</p><p id="654b55f3-a6d9-459d-adbd-8e492bc896bc" class="">Победители и призеры республиканского этапа всероссийской олимпиады школьников по профильному общеобразовательному предмету среди учащихся 11 классов, - в течение 4 лет, следующих за годом проведения соответствующей олимпиады (не используемые для получения особых прав и (или) преимуществ при поступлении на обучение по конкретным условиям поступления и конкретным основаниям приема) - начисляется 5 баллов.</p><p id="f3962c99-d2a6-427a-8dc1-d12a6425d296" class="">Победители и призеры олимпиады школьников «Абитуриент ДГУ» по профильному общеобразовательному предмету среди учащихся 11 классов, - в течение 4 лет, следующих за годом проведения соответствующей олимпиады - начисляется 5 баллов.</p><p id="fd9911b3-52f3-43ba-bc8a-d638466fd49f" class="">Наличие золотого знака отличия ГТО - 1 балл.</p></details></li></ul><p id="e811e338-66d1-45a0-be3f-d156908ee032" class="">
+</p></div></article></body></html>
