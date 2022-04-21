@@ -48,18 +48,25 @@ a {
     font-style: normal;
     /* font-weight: 400; */
     font-size: 1.3vw;
-    margin: 15px 0 0 5px;
+    margin: 2vh 0 0 1vw;
+    list-style-type: none;
 }
 
 .header__link::before {
     margin-left: 0;
     content: '';
     position: absolute;
-    /* top: 2px; */
-    left: 0;
-    height: 1.8vw;
-    width: 1.8vw;
+    top: -2px;
+    left: -0.7vw;
+    width: 1em;
+    height: 1em;
     border-radius: 50%
+}
+
+@media (max-width: 1670px) {
+    .header__link::before {
+        left: 0vw;
+    }
 }
 
 .header__link:nth-child(1)::before {
